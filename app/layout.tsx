@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "@/app/theme-provider";
+import Footer from "@/modules/Footer";
 
 const mazzard = localFont({
   src: [
@@ -112,11 +113,14 @@ export default function RootLayout({
       <body className={`${mazzard.className} antialiased`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <div className="select-none flex flex-col px-2">
+            <main>{children}</main>
+            <Footer />
+          </div>
         </ThemeProvider>
       </body>
     </html>
