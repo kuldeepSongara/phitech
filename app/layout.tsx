@@ -117,7 +117,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="select-none flex flex-col px-2">
+          <div className="select-none flex flex-col">
             <main>{children}</main>
             <Footer />
           </div>
