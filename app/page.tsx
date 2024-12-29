@@ -1,5 +1,5 @@
 import NavBar from "@/modules/NavBar";
-import Testimonials from "@/modules/Testimonials";
+// import Testimonials from "@/modules/Testimonials";
 
 export default function Home() {
   return (
